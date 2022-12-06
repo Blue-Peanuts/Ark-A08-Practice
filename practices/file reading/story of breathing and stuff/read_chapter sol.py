@@ -24,7 +24,17 @@ def read_chapter(chapter: int, story_file: TextIO) -> str:
     >>> read_chapter(4, file) == chap4_ans
     True
     """
-    pass
+    to_return = ''
+    story = story_file.readlines()
+    i = 0
+    found_chapter = False
+    while i < len(story) and 'Chapter ' + str(chapter + 1) not in story[i]:
+        if found_chapter:
+            to_return += story[i]
+        if 'Chapter ' + str(chapter) in story[i]:
+            found_chapter = True
+        i += 1
+    return to_return
 
 
 if __name__ == '__main__':
