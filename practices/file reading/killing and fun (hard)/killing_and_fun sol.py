@@ -23,7 +23,7 @@ def kill_log(log_file: TextIO) -> List[str]:
     Conrad protect Justin
     Should return 'Fake kill log' since Conrad should be dead right now
     
-    You also cannot kill a dead person
+    You also cannot kill or protect a dead person
     For example
     Ark attack Conrad
     Sigmund attack Conrad
