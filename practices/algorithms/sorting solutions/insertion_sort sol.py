@@ -24,7 +24,7 @@ def sort_ints(lst: list) -> None:
                                              # best case runs N times, if the list is already sorted (linear time complexity)
                                              # worst case it runs N - 1 + N - 2 + ... + 1 times (quadratic time complexity)
                                              # but if we look at comparisons, it runs 2 comparisons each loop, and needs one more comparison to end the loop
-                                             # so worst case is N(N - 1)/2 + N comparisons (still quadratic)
+                                             # so worst case is 2 * N(N - 1)/2 + N comparisons (or N^2) (still quadratic)
             lst[j], lst[j - 1] = lst[j - 1], lst[j]
             j -= 1
         
