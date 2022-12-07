@@ -18,13 +18,11 @@ def biggest_sum(lst: List[int]) -> int:
     -90
     """
     big = lst[0] + lst[1]
-    count = 0
     for i in range(len(lst)):
         for j in range(i):
-            count += 1
             if lst[i] + lst[j] > big:
                 big = lst[i] + lst[j]
-    return big, count
+    return big
 
 
 if __name__ == '__main__':
