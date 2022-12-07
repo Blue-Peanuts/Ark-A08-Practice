@@ -1,0 +1,6 @@
+Menu: Shrimp, Pork, Chicken, Fish, Noodles
+Conrad orders Shrimp, Pork, Noodles
+Josephine orders Chicken, Chicken, Chicken, Chicken, Pork, Pork
+Conrad eats Shrimp, Pork
+Kate orders Fish
+Josephine eats Chicken, Pork

@@ -1,0 +1,4 @@
+Menu: Shrimp, Pork, Chicken
+Conrad orders Shrimp, Pork
+Josephine orders Chicken
+Conrad eats Shrimp, Pork
