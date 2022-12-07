@@ -1,0 +1,3 @@
+Worst Case and Best Case are the same: 
+	N^2 inner loops ran
+	Quadratic Time Complexity

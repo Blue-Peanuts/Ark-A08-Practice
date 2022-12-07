@@ -1,0 +1,15 @@
+Worst Case and Best Case are the same:
+	
+	i 0 1 2 3 4 5 ... N-1
+	j   0 0 0 0 0 ... 0
+            1 1 1 1 ... 1
+              2 2 2 ... 2
+                3 3 ... 3
+                        .
+                        .
+                        .
+                        N-2
+	j can run 0 + 1 + 2 + ... + N-1 times
+
+	N(N - 1)/2 Comparisons
+	Quadratic Time Complexity

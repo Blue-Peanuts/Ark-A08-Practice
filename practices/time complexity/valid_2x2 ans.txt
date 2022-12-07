@@ -1,0 +1,6 @@
+Worst Case: 
+	(N - 1)^2 Comparisons
+	Quadratic Time Complexity
+Best Case:
+	1 Comparison
+	Constant Time Complexity

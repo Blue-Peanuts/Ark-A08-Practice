@@ -1,0 +1,6 @@
+Worst Case: 
+	N * 2 + 2
+	Linear Time Complexity
+Best Case:
+	2 Comparisons (Empty List)
+	Constant Time Complexity
