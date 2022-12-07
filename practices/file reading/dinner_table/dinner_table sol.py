@@ -13,7 +13,7 @@ def get_food_after_log(log_file: TextIO) -> Dict[str, Dict[str, int]]:
     Conrad eats Pork
     Shaul orders Fish
     
-    Should return {Conrad: {Pork: 0, Shrimp: 1, Fish: 0}, Shaul: {Fish: 0}}
+    Should return {Conrad: {Pork: 0, Shrimp: 1, Fish: 0}, Shaul: {Fish: 1}}
     
     Note that even though Conrad did not eat nor ordered Fish, Fish should still be a key in Conrad's dictionary.
     
