@@ -14,7 +14,8 @@ def kill_log(log_file: TextIO) -> List[str]:
     No one would die in this case
     
     
-    But if the person doing the protecting changes their target, or dies, the person being protected doesn't have protection anymore.
+    You can be protected by multiple people.
+    People can change their protecting target.
 
     If a person acts when they should be dead, return 'Fake kill log' instead.
     
@@ -58,6 +59,11 @@ def kill_log(log_file: TextIO) -> List[str]:
     >>> ans = kill_log(file)
     >>> ans
     'Fake kill log'
+    >>> file = open('kill_log_7.txt', 'r')
+    >>> ans = kill_log(file)
+    >>> ans.sort()
+    >>> ans
+    ['Cheryl', 'Conrad', 'Ivy', 'Patrick', 'Shaul']
     """
     pass
 
