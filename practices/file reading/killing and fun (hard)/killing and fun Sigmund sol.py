@@ -59,6 +59,7 @@ def kill_log(log_file: TextIO) -> List[str]:
     'Fake kill log'
     """
 
+### Attention: This code is true if ppls can only have one newest protectors, but actually ppls can have multiple protectors. This code might be correct on a older version of this question.
    people = {}  # generally the values are [alive/dead, protected/unprotected, if protected then who]
     for line in log_file.readlines():
         line = line.strip('\n').split()
@@ -75,6 +76,8 @@ def kill_log(log_file: TextIO) -> List[str]:
         else:
             if line[2] not in people:
                 people[line[2]] = ['alive', '', '']
+            if line[2][0] == 'dead':
+                return 'Fake kill log'
             people[line[2]][1], people[line[2]][2] = 'protected', line[0]
             for person in people:
                 if person != line[2] and people[person][2] == line[0]:
